@@ -30,6 +30,13 @@
                         </tr>
                     
                         <tr class="prop">
+                            <td valign="top" class="name"><g:message code="word.categ.label" default="Categ" /></td>
+                            
+                            <td valign="top" class="value"><g:link controller="categ" action="show" id="${wordInstance?.categ?.id}">${wordInstance?.categ?.name}</g:link></td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
                             <td valign="top" class="name"><g:message code="word.en.label" default="En" /></td>
                             
                             <td valign="top" class="value">${fieldValue(bean: wordInstance, field: "en")}</td>

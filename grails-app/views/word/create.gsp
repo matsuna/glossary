@@ -30,6 +30,15 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                    <label for="categ"><g:message code="word.categ.label" default="Categ" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: wordInstance, field: 'categ', 'errors')}">
+                                    <g:select name="categ.id" from="${glossary.Categ.list()}" optionValue="name" optionKey="id" value="${wordInstance?.categ?.id}"  />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                     <label for="en"><g:message code="word.en.label" default="En" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: wordInstance, field: 'en', 'errors')}">

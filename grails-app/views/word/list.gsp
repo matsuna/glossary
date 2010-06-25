@@ -24,6 +24,8 @@
                         
                             <g:sortableColumn property="id" title="${message(code: 'word.id.label', default: 'Id')}" />
                         
+                            <th><g:message code="word.categ.label" default="Categ" /></th>
+                        
                             <g:sortableColumn property="en" title="${message(code: 'word.en.label', default: 'En')}" />
                         
                             <g:sortableColumn property="ja" title="${message(code: 'word.ja.label', default: 'Ja')}" />
@@ -35,6 +37,8 @@
                         <tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
                         
                             <td><g:link action="show" id="${wordInstance.id}">${fieldValue(bean: wordInstance, field: "id")}</g:link></td>
+                        
+                            <td>${fieldValue(bean: wordInstance, field: "categ.name")}</td>
                         
                             <td>${fieldValue(bean: wordInstance, field: "en")}</td>
                         

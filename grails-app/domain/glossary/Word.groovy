@@ -6,4 +6,6 @@ class Word {
     }
 String en
 String ja
+Categ categ
+
 }
