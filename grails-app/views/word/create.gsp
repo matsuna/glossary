@@ -27,7 +27,7 @@
                 <div class="dialog">
                     <table>
                         <tbody>
-                        
+
                             <tr class="prop">
                                 <td valign="top" class="name">
                                     <label for="categ"><g:message code="word.categ.label" default="Categ" /></label>
@@ -36,7 +36,7 @@
                                     <g:select name="categ.id" from="${glossary.Categ.list()}" optionValue="name" optionKey="id" value="${wordInstance?.categ?.id}"  />
                                 </td>
                             </tr>
-                        
+
                             <tr class="prop">
                                 <td valign="top" class="name">
                                     <label for="en"><g:message code="word.en.label" default="En" /></label>
@@ -45,7 +45,7 @@
                                     <g:textField name="en" value="${wordInstance?.en}" />
                                 </td>
                             </tr>
-                        
+
                             <tr class="prop">
                                 <td valign="top" class="name">
                                     <label for="ja"><g:message code="word.ja.label" default="Ja" /></label>
@@ -54,7 +54,7 @@
                                     <g:textField name="ja" value="${wordInstance?.ja}" />
                                 </td>
                             </tr>
-                        
+
                         </tbody>
                     </table>
                 </div>

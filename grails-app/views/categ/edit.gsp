@@ -30,7 +30,7 @@
                 <div class="dialog">
                     <table>
                         <tbody>
-                        
+
                             <tr class="prop">
                                 <td valign="top" class="name">
                                   <label for="name"><g:message code="categ.name.label" default="Name" /></label>
@@ -39,7 +39,7 @@
                                     <g:textField name="name" value="${categInstance?.name}" />
                                 </td>
                             </tr>
-                        
+
                         </tbody>
                     </table>
                 </div>

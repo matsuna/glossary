@@ -58,7 +58,7 @@ class WordController {
             if (params.version) {
                 def version = params.version.toLong()
                 if (wordInstance.version > version) {
-                    
+
                     wordInstance.errors.rejectValue("version", "default.optimistic.locking.failure", [message(code: 'word.label', default: 'Word')] as Object[], "Another user has updated this Word while you were editing")
                     render(view: "edit", model: [wordInstance: wordInstance])
                     return

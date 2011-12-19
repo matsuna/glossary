@@ -21,21 +21,21 @@
                 <table>
                     <thead>
                         <tr>
-                        
+
                             <g:sortableColumn property="id" title="${message(code: 'categ.id.label', default: 'Id')}" />
-                        
+
                             <g:sortableColumn property="name" title="${message(code: 'categ.name.label', default: 'Name')}" />
-                        
+
                         </tr>
                     </thead>
                     <tbody>
                     <g:each in="${categInstanceList}" status="i" var="categInstance">
                         <tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
-                        
+
                             <td><g:link action="show" id="${categInstance.id}">${fieldValue(bean: categInstance, field: "id")}</g:link></td>
-                        
+
                             <td>${fieldValue(bean: categInstance, field: "name")}</td>
-                        
+
                         </tr>
                     </g:each>
                     </tbody>

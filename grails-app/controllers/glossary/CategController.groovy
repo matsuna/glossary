@@ -58,7 +58,7 @@ class CategController {
             if (params.version) {
                 def version = params.version.toLong()
                 if (categInstance.version > version) {
-                    
+
                     categInstance.errors.rejectValue("version", "default.optimistic.locking.failure", [message(code: 'categ.label', default: 'Categ')] as Object[], "Another user has updated this Categ while you were editing")
                     render(view: "edit", model: [categInstance: categInstance])
                     return
