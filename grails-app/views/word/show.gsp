@@ -21,35 +21,35 @@
             <div class="dialog">
                 <table>
                     <tbody>
-                    
+
                         <tr class="prop">
                             <td valign="top" class="name"><g:message code="word.id.label" default="Id" /></td>
-                            
+
                             <td valign="top" class="value">${fieldValue(bean: wordInstance, field: "id")}</td>
-                            
+
                         </tr>
-                    
+
                         <tr class="prop">
                             <td valign="top" class="name"><g:message code="word.categ.label" default="Categ" /></td>
-                            
+
                             <td valign="top" class="value"><g:link controller="categ" action="show" id="${wordInstance?.categ?.id}">${wordInstance?.categ?.name}</g:link></td>
-                            
+
                         </tr>
-                    
+
                         <tr class="prop">
                             <td valign="top" class="name"><g:message code="word.en.label" default="En" /></td>
-                            
+
                             <td valign="top" class="value">${fieldValue(bean: wordInstance, field: "en")}</td>
-                            
+
                         </tr>
-                    
+
                         <tr class="prop">
                             <td valign="top" class="name"><g:message code="word.ja.label" default="Ja" /></td>
-                            
+
                             <td valign="top" class="value">${fieldValue(bean: wordInstance, field: "ja")}</td>
-                            
+
                         </tr>
-                    
+
                     </tbody>
                 </table>
             </div>
